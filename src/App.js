@@ -9,7 +9,7 @@ const App = () => {
     <div className='w-screen h-auto flex flex-col bg-slate-100'>
     <Header/>
 
-    <main className='mt-32  w-full'>
+    <main className='mt-14 medium:mt-20 px-4 medium:px-14 py-4 w-full'>
     <Routes>
           <Route path='/*' element={ <MainContainer/>}/>
           <Route path='/createItem' element={ <CreateContainer/>}/>

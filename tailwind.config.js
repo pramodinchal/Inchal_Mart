@@ -22,6 +22,7 @@ export const theme = {
     210: "210px",
     350: "350px",
     620: "620px",
+    650: "650px"
   },
   screens: {
     small: "640px",
