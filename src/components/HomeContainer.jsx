@@ -1,6 +1,8 @@
 import React from 'react'
 import Delivery from '../img/delivery.png'
 import HeroBg from  '../img/heroBg.png'
+import { mainData } from '../utils/data'
+
 
 const HomeContainer = () => {
   return (
@@ -19,12 +21,19 @@ const HomeContainer = () => {
     <div className='py-2 flex-1 flex items-center relative'>
         <img src={HeroBg} className='ml-auto h-420 w-full Large:w-auto Large:h-650' alt='hero-bg'/>
 
-        <div className='w-full h-full absolute top-0 left-0 flex items-center justify-center px-32 py-4 '>
-          <div className='w-300 px-5 py-1 bg-red-700'></div>
+        <div className=' h-full absolute top-0 flex items-center justify-center px-15 py-6 gap-4 flex-wrap'>
+          {mainData && mainData.map(n=>(
+            <div key={n.id} className='w-24   Large:w-190 min-w-[240px] min-h-[220px] p-6 pb-2 bg-gray-300 bg-opacity-40 from-gray-400 backdrop-blur-md rounded-3xl flex flex-col items-center justify-center drop-shadow-lg'>
+            <img src={n.imageSrc} className='w-16 Large:w-30 -mt-8 Large:-mt-18' alt='IceCream'/>
+            <p className='text-[14px] Large:text-xl font-semibold text-gray-700 flex flex-col'>{n.name}</p>
+            <p className='text-[10px] Large:text-xs break-normal font-semibold text-gray-500 flex flex-col my-1 Large:my-2'>{n.desc}</p>
+            <p className='text-sm font-semibold text-gray-800'><span className='text-xs text-red-600'>Rs:</span>{n.price}</p>
+          </div>
+          ))}
         </div>
     </div>
   </section>
   )
 }
 
-export default HomeContainer
+export default HomeContainer;
