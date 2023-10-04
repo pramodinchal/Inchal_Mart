@@ -20,7 +20,7 @@ import {
 import { storage } from "../firebase.config";
 import { getAllFoodItems, saveItem } from "../utils/firebaseFunctions";
 import { actionType } from "../context/reducer";
-import { useStateValue } from "../context/StateProvider";
+/* import { useStateValue } from "../context/StateProvider"; */
 
 const CreateContainer = () => {
   const [title, setTitle] = useState("");
@@ -31,7 +31,7 @@ const CreateContainer = () => {
   const [alertStatus, setAlertStatus] = useState("danger");
   const [msg, setMsg] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [{foodItems}, dispatch] = useStateValue();
+  /* const [{foodItems}, dispatch] = useStateValue(); */
   
   const uploadImage = (e) => {
     setIsLoading(true);
@@ -127,7 +127,7 @@ const CreateContainer = () => {
       }, 4000);
     }
 
-      fetchData();
+     /*  fetchData(); */
   };
 
   const clearData = () => {
@@ -137,14 +137,14 @@ const CreateContainer = () => {
     setCategory("Select Category");
   };
 
-   const fetchData = async () => {
+  /*  const fetchData = async () => {
   await getAllFoodItems().then((data) => {
     dispatchEvent({
       type: actionType.SET_FOOD_ITEMS,
       foodItems: data,
     });
   });
-}; 
+};  */
   return (
     <div className="w-full h-auto min-h-screen flex items-center justify-center">
       <div className="w-[65%] md:w-[75%] border border-gray-300 rounded-lg p-4 flex flex-col items-center justify-center gap-4">

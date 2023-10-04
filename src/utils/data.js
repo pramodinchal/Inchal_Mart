@@ -19,8 +19,8 @@ export const categories = [
     },
     {
         id: 2,
-        name: "Sauces & Oils",
-        urlParaName : "Sauces & Oils"
+        name: "Cooking Oils",
+        urlParaName : "Cooking Oils"
       },
       {
         id: 3,
@@ -47,19 +47,5 @@ export const categories = [
         name: "Beverages",
         urlParaName : "Beverages"
       },
-      {
-        id: 8,
-        name: "Household Supplies",
-        urlParaName : "Household Supplies"
-      },
-      {
-        id: 9,
-        name: "Baking",
-        urlParaName : "Baking"
-      },
-       {
-        id: 10,
-        name: "Other items",
-        urlParaName : "Other items"
-      }
+     
 ]

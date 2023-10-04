@@ -37,6 +37,7 @@ export const theme = {
     cartNumBg: "#e80013",
     primary: "#f5f3f3",
   }, */
+  plugins : [require('tailwind-scrollbar'),
+]
 };
-export const plugins = [];
 
