@@ -1,26 +1,26 @@
 import IceCream from '../img/i7.png';
 import Oil from '../img/fortuneoil.png';
 import ColdDrink from '../img/d8.png';
-import Banana from '../img/f9.png';
+import Snacks from '../img/lays.png';
 
 
 export const mainData = [
     { id: 1, name: 'Icecream', desc: 'Strawberry & Vanilla', price: ' 150', imageSrc: IceCream},
     { id: 2, name: 'Cooking Oil', desc: 'Refined Oil', price: ' 120', imageSrc: Oil},
     { id: 3, name: 'SoftDrinks', desc: 'Coco-cola', price: ' 25', imageSrc: ColdDrink},
-    { id: 4, name: 'Fruits', desc: 'Banana', price: ' 60', imageSrc: Banana}
+    { id: 4, name: 'Snacks', desc: 'Lays', price: '20', imageSrc: Snacks}
 ]
 
 export const categories = [
     {
       id: 1,
-      name: "Ice Cream",
+      name: "IceCream",
       urlParaName : "icecream"
     },
     {
         id: 2,
-        name: "Cooking Oils",
-        urlParaName : "Cooking Oils"
+        name: "Oils",
+        urlParaName : "Oils"
       },
       {
         id: 3,
@@ -34,8 +34,8 @@ export const categories = [
       },
       {
         id: 5,
-        name: "Bread & Bakery",
-        urlParaName : "Bread & Bakery"
+        name: "Breads",
+        urlParaName : "Breads"
       },
       {
         id: 6,
